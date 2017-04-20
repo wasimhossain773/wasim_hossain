@@ -46,7 +46,7 @@ import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 
 /**
- * Created by David on 06.03.2016.
+ * Created by wasim hossain 
  */
 @RunWith(AndroidJUnit4.class)
 public class ScreenshotTest {
