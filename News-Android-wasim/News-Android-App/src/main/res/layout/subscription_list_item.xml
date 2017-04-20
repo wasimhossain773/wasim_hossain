@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/exp_listview_row_height"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/img_View_expandable_indicator"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:src="@drawable/ic_action_expand_less"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="12dp"
+            android:tint="?attr/tintColor"
+            android:contentDescription="@string/content_desc_expand"/>
+        <ImageView
+            android:id="@+id/img_view_favicon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:clickable="false"
+            android:focusable="false"
+            android:padding="12dp"
+            android:contentDescription="@string/content_desc_none"/>
+    </FrameLayout>
+
+    <TextView
+		android:id="@+id/summary"
+       	android:layout_width="0dp"
+       	android:layout_height="match_parent"
+       	android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+       	android:gravity="center_vertical|start"
+       	android:singleLine="true"
+       	android:textSize="14sp"
+       	android:textStyle="bold"
+       	android:layout_weight="1"
+        android:textAlignment="viewStart"
+       	android:textIsSelectable="false"
+        tools:text="Summary"
+        android:alpha=".87"
+        android:focusable="false"
+        android:clickable="false" />
+    <!--app:typeface="roboto_thin" -->
+
+
+    <TextView
+        android:id="@+id/tV_feedsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|end"
+        android:singleLine="true"
+        android:textIsSelectable="false"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="12sp"
+        tools:text="13"
+        android:alpha=".54" />
+
+</LinearLayout>

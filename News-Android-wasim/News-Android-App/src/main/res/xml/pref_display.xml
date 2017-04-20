@@ -1,0 +1,49 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+         NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it.
+    -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_display_apptheme"
+        android:entryValues="@array/pref_display_apptheme_values"
+        android:key="sp_app_theme"
+        android:title="@string/pref_title_app_theme" />
+    
+    
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_display_feed_list_layout"
+        android:entryValues="@array/pref_display_feed_list_layout_values"
+        android:key="sp_feed_list_layout"
+        android:title="@string/pref_title_feed_list_layout" />
+    
+    
+    <ListPreference
+        android:defaultValue="2"
+        android:entries="@array/pref_title_lines_count"
+        android:entryValues="@array/pref_title_lines_count_values"
+        android:key="sp_title_lines_count"
+        android:title="@string/pref_display_title_lines_count" />
+
+
+    <MultiSelectListPreference
+        android:entries="@array/pref_display_news_detail_actionbar_icons"
+        android:entryValues="@array/pref_display_news_detail_actionbar_icons_values"
+        android:key="sp_news_detail_actionbar_icons"
+        android:defaultValue="@array/pref_display_news_detail_actionbar_icons_default_values"
+        android:title="@string/pref_display_news_detail_actionbar_icons_title" />
+    
+    <!--
+         This preference simply launches an intent when selected. Use this UI sparingly, per
+         design guidelines.
+    -->
+    <!--
+    <Preference android:title="@string/pref_title_system_sync_settings" >
+        <intent android:action="android.settings.SYNC_SETTINGS" />
+    </Preference>
+    -->
+</PreferenceScreen>

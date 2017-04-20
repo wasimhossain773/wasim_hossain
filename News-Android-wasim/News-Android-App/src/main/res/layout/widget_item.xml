@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="#8a000000"
+    android:baselineAligned="false" >
+
+    
+    <LinearLayout
+        android:id="@+id/color_line_feed"
+	    android:layout_width="4dip"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal" />
+
+
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp" >
+
+
+        <RelativeLayout
+            android:id="@+id/cb_lv_item_read_wrapper"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/cb_lv_item_read"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:background="@drawable/ic_check_box_white"
+                android:contentDescription="@string/content_desc_mark_as_read"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/feed_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/cb_lv_item_read_wrapper"
+            android:layout_toStartOf="@id/cb_lv_item_read_wrapper"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical|start"
+            android:textAlignment="viewStart"
+            android:singleLine="true"
+            android:textIsSelectable="false"
+            tools:text="Item title"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/feed_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feed_title"
+            android:layout_toLeftOf="@id/cb_lv_item_read_wrapper"
+            android:layout_toStartOf="@id/cb_lv_item_read_wrapper"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:singleLine="true"
+            android:textIsSelectable="false"
+            tools:text="07.08.14 19:00"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/feed_author_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feed_title"
+            android:layout_toLeftOf="@id/feed_datetime"
+            android:layout_toStartOf="@id/feed_datetime"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            android:singleLine="true"
+            android:textIsSelectable="false"
+            tools:text="Feed name"
+            android:textSize="14sp" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
