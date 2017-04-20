@@ -1,4 +1,4 @@
-include ':News-Android-App', ':ownCloud-Account-Importer'
+include ':wasim.android-news', ':Cloud-Account-Importer'
 include ':Changeloglib:ChangeLogLibrary'
 include ':MaterialShowcaseView:library'
 
